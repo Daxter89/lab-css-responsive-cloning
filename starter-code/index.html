@@ -1,13 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>CSS Lab | Responsive Cloning | Product Hunt</title>
-  <link rel="stylesheet" href="styles.min.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Lab | Responsive Cloning | Product Hunt</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="top-bar">
+          <img src="./images/logo.png" alt="Logo de imagen" id="logo" />
+          <div class="search-container">
+            <img
+              src="./images/search.png"
+              alt="Imagen de una lupa"
+              class="search-icon"
+            />
+            <input
+              type="text"
+              id="search-bar"
+              placeholder="Discover your next favorite thing..."
+            />
+          </div>
+          <div class="login-container">
+            <span id="trespuntos">...</span>
+            <span id="login">Login</span>
+          </div>
+        </div>
+        <nav class="navigation-bar">
+          <a href="#">Home</a>
+          <a href="#">Tech</a>
+          <a href="#">Games</a>
+          <a href="#">Podcasts</a>
+          <a href="#">Books</a>
+          <a href="#">Bots</a>
+          <a href="#">Developer Tools</a>
+          <a href="#">iMessage Apps</a>
+          <a href="#">iPhone</a>
+          <a href="#">Photography Tools</a>
+          <div id="flechas">
+            <img src="./images/arrow-prev.png" alt="Flecha prévia" />
+            <img src="./images/arrow-next.png" alt="Flecha siguiente" />
+          </div>
+        </nav>
+      </header>
+      <div id="div-email">
+        <img
+          src="./images/mano.jpeg"
+          alt="Emoji de una mano"
+          id="imagen-mano"
+        />
+        <p class="welcome-text">
+          <strong>Welcome to Product Hunt</strong>
+          <span>Get the best new products in your inbox, daily</span>
+        </p>
+        <input type="text" id="buscadorEmail" placeholder="Your email" />
+        <button>SUBSCRIBE</button>
+        <img src="./images/close.png" alt="Imagen para cerrar" class="cruzes" />
+      </div>
+
+      <div class="content-section">
+        <div class="container">
+          <div class="main-content">
+            <h2>Popular this week</h2>
+            <div class="items">
+              <!-- Items de Popular this week -->
+              <div class="item">
+                <img
+                  src="./images/popular-this-week/app-1.png"
+                  alt="Duolingo Bots"
+                />
+                <div class="item-info">
+                  <h3>Duolingo Bots</h3>
+                  <p>AI-powered characters to teach language conversation</p>
+                  <div class="item-details">
+                    <span class="stat"
+                      ><img src="./images/votes.png" alt="Likes" /> 1460</span
+                    >
+                    <span class="stat"
+                      ><img src="./images/comments.png" alt="Comments" />
+                      49</span
+                    >
+                    <span class="platform">IPHONE + 2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img
+                  src="./images/popular-this-week/app-2.png"
+                  alt="Tribe 2.0"
+                />
+                <div class="item-info">
+                  <h3>Tribe 2.0</h3>
+                  <p>Introducing Augmented Messaging</p>
+                  <div class="item-details">
+                    <span class="stat"
+                      ><img src="./images/votes.png" alt="Likes" /> 1455</span
+                    >
+                    <span class="stat"
+                      ><img src="./images/comments.png" alt="Comments" />
+                      188</span
+                    >
+                    <span class="platform">ANDROID + 4</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img
+                  src="./images/popular-this-week/app-3.png"
+                  alt="Workplace by Facebook"
+                />
+                <div class="item-info">
+                  <h3>Workplace by Facebook</h3>
+                  <p>
+                    Connect everyone in your company and turn ideas into action
+                  </p>
+                  <div class="item-details">
+                    <span class="stat"
+                      ><img src="./images/votes.png" alt="Likes" /> 1003</span
+                    >
+                    <span class="stat"
+                      ><img src="./images/comments.png" alt="Comments" />
+                      80</span
+                    >
+                    <span class="platform">ANDROID + 2</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-more">Show more</div>
+
+            <h2>Today</h2>
+            <div class="items">
+              <div class="item">
+                <img src="./images/today/app-1.png" alt="Sprayscape" />
+                <div class="item-info">
+                  <h3>Sprayscape</h3>
+                  <p>
+                    A perfectly imperfect VR-ish camera experiment, by Google
+                  </p>
+                  <div class="item-details">
+                    <span class="stat"
+                      ><img src="./images/votes.png" alt="Likes" /> 82</span
+                    >
+                    <span class="stat"
+                      ><img src="./images/comments.png" alt="Comments" />
+                      8</span
+                    >
+                    <span class="platform">ANDROID + 3</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="./images/today/app-2.png" alt="Sprayscape" />
+                <div class="item-info">
+                  <h3>Ask Gary Vee</h3>
+                  <p>The unnoficial chat of Gary Vee</p>
+                  <div class="item-details">
+                    <span class="stat"
+                      ><img src="./images/votes.png" alt="Likes" /> 82</span
+                    >
+                    <span class="stat"
+                      ><img src="./images/comments.png" alt="Comments" />
+                      8</span
+                    >
+                    <span class="platform">GET SHIT DONE</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <img src="./images/today/app-3.png" alt="Sprayscape" />
+                <div class="item-info">
+                  <h3>The Electron Wheel</h3>
+                  <p>The unnoficial chat of Gary Vee</p>
+                  <div class="item-details">
+                    <span class="stat"
+                      ><img src="./images/votes.png" alt="Likes" /> 82</span
+                    >
+                    <span class="stat"
+                      ><img src="./images/comments.png" alt="Comments" />
+                      8</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="show-more">Show more</div>
+          </div>
+
+          <div class="sidebar">
+            <div id="aside-right">
+              <div class="aside-header">
+                <h2>Kittybot for Slack</h2>
+                <img
+                  src="./images/close.png"
+                  alt="Imagen para cerrar"
+                  class="cruzes"
+                />
+              </div>
+              <p>A friendly feline that sends you cool new things</p>
+              <button id="add-kittybot">Add Kittybot to Slack</button>
+            </div>
+
+            <!-- Chats -->
+            <div class="live-chats">
+              <h3>Upcoming Live Chats</h3>
+              <div class="live-chat">
+                <img
+                  src="./images/today/app-1.png"
+                  alt="Profile Image"
+                  class="profile-img"
+                />
+                <div class="chat-info">
+                  <p class="chat-name">Adam Besvinick</p>
+                  <p class="chat-title">VC at Deep Fork Capital</p>
+                  <button class="remind-btn">REMIND ME</button>
+                </div>
+              </div>
+
+              <div class="live-chat">
+                <img
+                  src="./images/today/app-2.png"
+                  alt="Profile Image"
+                  class="profile-img"
+                />
+                <div class="chat-info">
+                  <p class="chat-name">Susan David</p>
+                  <p class="chat-title">VC at Deep Fork Capital</p>
+                  <button class="remind-btn">REMIND ME</button>
+                </div>
+              </div>
+              <div class="live-chat">
+                <img
+                  src="./images/popular-this-week/app-1.png"
+                  alt="Profile Image"
+                  class="profile-img"
+                />
+                <div class="chat-info">
+                  <p class="chat-name">Jonas Brothers</p>
+                  <p class="chat-title">VC at Deep Fork Capital</p>
+                  <button class="remind-btn">REMIND ME</button>
+                </div>
+              </div>
+              <div class="live-chat">
+                <img
+                  src="./images/today/app-2.png"
+                  alt="Profile Image"
+                  class="profile-img"
+                />
+                <div class="chat-info">
+                  <p class="chat-name">Susan David</p>
+                  <p class="chat-title">VC at Deep Fork Capital</p>
+                  <button class="remind-btn">REMIND ME</button>
+                </div>
+              </div>
+              <div class="live-chat">
+                <img
+                  src="./images/popular-this-week/app-1.png"
+                  alt="Profile Image"
+                  class="profile-img"
+                />
+                <div class="chat-info">
+                  <p class="chat-name">Jonas Brothers</p>
+                  <p class="chat-title">VC at Deep Fork Capital</p>
+                  <button class="remind-btn">REMIND ME</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tweets">
+              <h3>Tweets liked by</h3>
+              <a href="#">@ProductHuntLOVE</a>
+              <div class="tweet">
+                <div class="tweet-header">
+                  <img
+                    src="./images/logo.png"
+                    alt="Profile Image"
+                    class="tweet-profile-img"
+                  />
+                  <div class="tweet-user-info">
+                    <p class="tweet-user-name">Max Polzner</p>
+                    <p class="tweet-user-handle">@WhoIsMaxPolzner</p>
+                  </div>
+                </div>
+                <p class="tweet-content">
+                  'Ask @GaryVee' 🐱‍👤 is on @ProductHunt!
+                  <a href="#">cards.twitter.com/cards/18ce53yr...</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
